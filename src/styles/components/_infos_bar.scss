@@ -1,0 +1,52 @@
+.infos-bar { //bloco branco
+    padding: 16px 24px;
+    background-color: white;
+    opacity: 90%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 850  px;
+    
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+        line-height: 22px;
+
+        &__item {
+            font-size: 12px;
+            color: #000;
+
+            b {
+                color: #000;
+                font-size: 16px;
+                display: block; //Para quebrar a linha
+            }
+        }
+
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+       &__infos {
+        // gap: 16px;
+        margin-right: 80px;
+       }
+
+    
+    }
+
+
+}
